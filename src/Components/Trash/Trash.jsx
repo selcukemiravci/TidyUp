@@ -1,4 +1,5 @@
 import React from 'react';
+import clickWAV from '../../Audio/arcade-jump.wav'
 import binPng from '../../Images/empty-trash.png';
 import rubbishPng from '../../Images/trash.png';
 import { emptyTrash } from './TrashUtils'
@@ -13,6 +14,10 @@ class Trash extends React.Component
 
   render() {
     return <>
+        <audio id="clickWAV">
+            <source src={clickWAV} type="audio/wav" />
+            Your browser does not support the audio element.
+        </audio>
         <div className="trash-bin">
             <img
                 id="rubbish"
@@ -24,6 +29,7 @@ class Trash extends React.Component
                 alt="empty trash bin"
                 className="absolute"
                 onClick={this.handleOnClick}/>
+
         </div>
     </>
   }

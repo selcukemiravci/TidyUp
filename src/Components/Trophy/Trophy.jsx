@@ -1,10 +1,10 @@
 import React from 'react';
 import clickWAV from '../../Audio/arcade-jump.wav'
-import plantPNG from '../../Images/plant.png';
-import './Plant.css'
-import { positions, movePlant } from './PlantUtils.js'
+import trophyImg from '../../Images/trophy.png';
+import './Trophy.css'
+import { positions, moveTrophy } from './TrophyUtils.js'
 
-class Plant extends React.Component
+class Trophy extends React.Component
 {
   state = {
     pos: {
@@ -14,7 +14,7 @@ class Plant extends React.Component
   }
 
   handleOnClick = () => {
-    movePlant(this.state.pos, this.setState.bind(this));
+    moveTrophy(this.state.pos, this.setState.bind(this));
   }
 
   render() {
@@ -29,13 +29,13 @@ class Plant extends React.Component
             Your browser does not support the audio element.
         </audio>
         <img
-            src={plantPNG}
-            alt="potted plant"
-            className="plant"
+            src={trophyImg}
+            alt="golden trophy on top of bookcase"
+            className="trophy"
             style={styles}
             onClick={this.handleOnClick}/>
     </>
   }
 }
 
-export default Plant;
+export default Trophy;

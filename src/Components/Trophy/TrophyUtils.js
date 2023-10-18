@@ -1,11 +1,11 @@
 const positions = {
-    pos1: { x: 50, y: 625 },
-    pos2: { x: 100, y: 550 },
-    pos3: { x: 155, y: 475 },
+    pos1: { x: 625, y: 235 },
+    pos2: { x: 515, y: 235 },
+    pos3: { x: 385, y: 235 },
 };
 const posKeys = Object.keys(positions);
 
-const movePlant = (currentState, setState) => {
+const moveTrophy = (currentState, setState) => {
     const audio = document.getElementById('clickWAV');
     audio.play();
 
@@ -24,4 +24,4 @@ const movePlant = (currentState, setState) => {
 };
 
 
-export { positions, movePlant }
+export { positions, moveTrophy }
