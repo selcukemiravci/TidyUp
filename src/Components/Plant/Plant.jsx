@@ -1,5 +1,5 @@
 import React from 'react';
-import plantPNG from '../Images/plant.png';
+import plantPNG from '../../Images/plant.png';
 import './Plant.css'
 import { positions, movePlant } from './PlantUtils.js'
 

@@ -1,0 +1,16 @@
+.trash-bin {
+    position: absolute;
+    top: 600px;
+    left: 240px;
+
+    width: 150px;
+    height: 176px;
+
+}
+
+.trash-bin .absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
