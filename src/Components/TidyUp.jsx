@@ -5,7 +5,8 @@ import BookStack from './BookStack/BookStack'
 import Book from './Book/Book'
 import Trash from './Trash/Trash'
 import Mat from './Mat/Mat'
-import Plant from './Plant/Plant';
+import Plant from './Plant/Plant'
+import Box from './Box/Box'
 
 class TidyUp extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class TidyUp extends React.Component {
         <div className="container">
             <img src={bgImg} alt="room with powder blue walls" />
             <Trash />
+            <Box />
             <Book />
             <BookStack />
             <Trophy />
