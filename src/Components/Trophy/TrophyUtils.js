@@ -5,7 +5,11 @@ const positions = {
 };
 const posKeys = Object.keys(positions);
 
+let correctTrophyPosition = false;
+
 const moveTrophy = (currentState, setState) => {
+    correctTrophyPosition = false;
+
     const audio = document.getElementById('clickWAV');
     audio.play();
 
@@ -21,7 +25,11 @@ const moveTrophy = (currentState, setState) => {
         y: nextPos.y,
         },
     });
+
+    if (nextPos == positions.pos3) {
+        correctTrophyPosition = true;
+    }
 };
 
 
-export { positions, moveTrophy }
+export { positions, moveTrophy, correctTrophyPosition }

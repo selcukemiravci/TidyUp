@@ -9,7 +9,25 @@ import Plant from './Plant/Plant'
 import Box from './Box/Box'
 import Clock from './Clock/Clock'
 
+import { correctBookPosition } from './Book/BookUtils';
+import { correctBookStackPosition } from './BookStack/BookStackUtils';
+import { correctBoxPosition } from './Box/BoxUtils';
+import { correctMatPosition } from './Mat/MatUtils';
+import { correctPlantPosition } from './Plant/PlantUtils';
+import { correctTrashFill } from './Trash/TrashUtils';
+import { correctTrophyPosition } from './Trophy/TrophyUtils'; 
+
 class TidyUp extends React.Component {
+
+  // FORGIVE ME FOR MY NON-OPTIMAL SOLUTION
+  checkForUnlock = () => {
+    const interval = setInterval(function() {
+      if (correctBookPosition && correctBookStackPosition && correctBoxPosition && correctMatPosition && correctPlantPosition && correctTrashFill && correctTrophyPosition) {
+        clearInterval(interval);
+      }
+    }, 1000);
+  };
+
   render() {
     return <>
         <div className="container">
@@ -23,7 +41,7 @@ class TidyUp extends React.Component {
             <Mat />
             <Plant />
         </div>
-
+        { this.checkForUnlock() }
     </>
   }
 }

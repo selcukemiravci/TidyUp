@@ -4,7 +4,11 @@ const positions = {
 };
 const posKeys = Object.keys(positions);
 
+let correctBookPosition = false;
+
 const rotateBook = (currentState, setState) => {
+    correctBookPosition = false;
+
     const audio = document.getElementById('clickWAV');
     audio.play();
 
@@ -20,7 +24,11 @@ const rotateBook = (currentState, setState) => {
     setState({
         rotation: nextPos,
     });
+
+    if (nextPos == positions.pos2) {
+        correctBookPosition = true;
+    }
 };
 
 
-export { positions, rotateBook }
+export { positions, rotateBook, correctBookPosition }

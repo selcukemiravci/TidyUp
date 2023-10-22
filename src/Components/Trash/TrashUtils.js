@@ -1,4 +1,8 @@
+let correctTrashFill = false;
+
 const emptyTrash = () => {
+    correctTrashFill = false;
+
     const audio = document.getElementById('clickWAV');
     audio.play();
 
@@ -10,6 +14,10 @@ const emptyTrash = () => {
             rubbishImg.style.visibility = 'hidden';
         }
     }
+
+    if (rubbishImg.style.visibility === 'hidden') {
+        correctTrashFill = true;
+    }
 }
 
-export { emptyTrash };
+export { emptyTrash, correctTrashFill };

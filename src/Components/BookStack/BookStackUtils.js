@@ -4,7 +4,11 @@ const positions = {
 };
 const posKeys = Object.keys(positions);
 
+let correctBookStackPosition = false;
+
 const moveBooks = (currentState, setState) => {
+    correctBookStackPosition = false;
+
     const audio = document.getElementById('clickWAV');
     audio.play();
 
@@ -20,7 +24,11 @@ const moveBooks = (currentState, setState) => {
         y: nextPos.y,
         },
     });
+
+    if (nextPos == positions.pos2) {
+        correctBookStackPosition = true;
+    }
 };
 
 
-export { positions, moveBooks }
+export { positions, moveBooks, correctBookStackPosition }

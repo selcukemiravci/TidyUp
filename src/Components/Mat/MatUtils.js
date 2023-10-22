@@ -4,7 +4,11 @@ const positions = {
 };
 const posKeys = Object.keys(positions);
 
+let correctMatPosition = false;
+
 const rotateMat = (currentState, setState) => {
+    correctMatPosition = false;
+
     const audio = document.getElementById('clickWAV');
     audio.play();
 
@@ -27,7 +31,11 @@ const rotateMat = (currentState, setState) => {
     setState({
         rotation: nextPos,
     });
+
+    if (nextPos == positions.pos2) {
+        correctMatPosition = true;
+    }
 };
 
 
-export { positions, rotateMat }
+export { positions, rotateMat, correctMatPosition }

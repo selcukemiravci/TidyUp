@@ -4,7 +4,11 @@ const positions = {
 };
 const posKeys = Object.keys(positions);
 
+let correctBoxPosition = false;
+
 const moveBox = (currentState, setState) => {
+    correctBoxPosition = false;
+
     const audio = document.getElementById('clickWAV');
     audio.play();
 
@@ -20,7 +24,11 @@ const moveBox = (currentState, setState) => {
         y: nextPos.y,
         },
     });
+
+    if (nextPos == positions.pos2) {
+        correctBoxPosition = true;
+    }
 };
 
 
-export { positions, moveBox }
+export { positions, moveBox, correctBoxPosition }

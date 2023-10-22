@@ -5,7 +5,11 @@ const positions = {
 };
 const posKeys = Object.keys(positions);
 
+let correctPlantPosition = false;
+
 const movePlant = (currentState, setState) => {
+    correctPlantPosition = false;
+
     const audio = document.getElementById('clickWAV');
     audio.play();
 
@@ -21,7 +25,11 @@ const movePlant = (currentState, setState) => {
         y: nextPos.y,
         },
     });
+
+    if (nextPos == positions.pos3) {
+        correctPlantPosition = true;
+    }
 };
 
 
-export { positions, movePlant }
+export { positions, movePlant, correctPlantPosition }
