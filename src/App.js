@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import TidyUp from './src/Components/TidyUp.jsx'; // Make sure the path is correct
 
 function App() {
   return (
     <div className="App">
+            <TidyUp />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

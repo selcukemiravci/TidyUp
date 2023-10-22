@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { getTimeString } from './ClockUtils.js'
 import './Clock.css'
 
@@ -31,9 +31,10 @@ class Clock extends React.Component
             top: -25,
             left: 350,
         }
-        return <>
-            <p id="clock" className="time" style={styles}>{getTimeString()}</p>
-        </>
+        return (
+            <p id="clock" className="time" style={styles}>{this.state.time}</p>
+        );
+        
     }
 }
 
