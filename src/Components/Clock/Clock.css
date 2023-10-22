@@ -1,0 +1,18 @@
+.time {
+    background-color: white;
+    background-image: url('../../Images/clock-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 303px;
+    height: 128px;
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0px 0 15px rgba(255, 255, 255, 0.5);
+    font-family: monospace;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
