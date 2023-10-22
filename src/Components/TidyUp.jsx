@@ -25,7 +25,7 @@ class TidyUp extends React.Component {
       if (correctBookPosition && correctBookStackPosition && correctBoxPosition && correctMatPosition && correctPlantPosition && correctTrashFill && correctTrophyPosition) {
         clearInterval(interval);
       }
-    }, 1000);
+    }, 250);
   };
 
   render() {
