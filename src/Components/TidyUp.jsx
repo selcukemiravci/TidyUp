@@ -4,6 +4,7 @@ import Trophy from './Trophy/Trophy'
 import BookStack from './BookStack/BookStack'
 import Book from './Book/Book'
 import Trash from './Trash/Trash'
+import Mat from './Mat/Mat'
 import Plant from './Plant/Plant';
 
 class TidyUp extends React.Component {
@@ -15,6 +16,7 @@ class TidyUp extends React.Component {
             <Book />
             <BookStack />
             <Trophy />
+            <Mat />
             <Plant />
         </div>
 

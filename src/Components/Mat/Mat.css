@@ -1,0 +1,24 @@
+
+.mat {
+    width: 680px;
+    transform-origin: bottom left;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(25deg);
+    }
+}
+
+.rotate-90 {
+    animation: rotate 1ms forwards;
+}
+
+.transition-rotate-25 {
+    transition: transform 0.5s;
+
+}
