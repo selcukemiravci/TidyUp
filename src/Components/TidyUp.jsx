@@ -8,6 +8,7 @@ import Mat from './Mat/Mat'
 import Plant from './Plant/Plant'
 import Box from './Box/Box'
 import Clock from './Clock/Clock'
+import Unlocked from './Unlocked/Unlocked'
 
 import { correctBookPosition } from './Book/BookUtils';
 import { correctBookStackPosition } from './BookStack/BookStackUtils';
@@ -18,31 +19,39 @@ import { correctTrashFill } from './Trash/TrashUtils';
 import { correctTrophyPosition } from './Trophy/TrophyUtils'; 
 
 class TidyUp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      unlocked: false,
+    };
+  }
 
   // FORGIVE ME FOR MY NON-OPTIMAL SOLUTION
   checkForUnlock = () => {
-    const interval = setInterval(function() {
+    const interval = setInterval(() => {
       if (correctBookPosition && correctBookStackPosition && correctBoxPosition && correctMatPosition && correctPlantPosition && correctTrashFill && correctTrophyPosition) {
         clearInterval(interval);
-        // trigger unlock logic here 
+        this.setState({ unlocked: true });
       }
-    }, 250);
+    }, 100);
   };
 
   render() {
     return <>
-        <div className="container">
-            <img src={bgImg} alt="room with powder blue walls" />
-            <Clock/>
-            <Trash />
-            <Box />
-            <Book />
-            <BookStack />
-            <Trophy />
-            <Mat />
-            <Plant />
-        </div>
-        { this.checkForUnlock() }
+        { this.state.unlocked === false ? ( 
+          <div className="container">
+              <img src={bgImg} alt="room with powder blue walls" />
+              <Clock/>
+              <Trash />
+              <Box />
+              <Book />
+              <BookStack />
+              <Trophy />
+              <Mat />
+              <Plant />
+              { this.checkForUnlock() }
+          </div>) : <Unlocked />
+        }
     </>
   }
 }
