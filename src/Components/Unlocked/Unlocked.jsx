@@ -1,5 +1,5 @@
 import React from 'react';
-import unlockedHomeScreen from '../../Images/unlocked-home-screen.PNG';
+import unlockedHomeScreen from '../../Images/unlocked-home-screen.png';
 
 class Unlocked extends React.Component
 {
