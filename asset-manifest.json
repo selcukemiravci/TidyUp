@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.aa90ea1c.css",
-    "main.js": "/static/js/main.a989e4ce.js",
-    "static/js/787.1f923308.chunk.js": "/static/js/787.1f923308.chunk.js",
-    "static/media/unlocked-home-screen.png": "/static/media/unlocked-home-screen.e6214bf34c7a7550768b.png",
-    "static/media/trash.png": "/static/media/trash.001f34435787b57e3dfa.png",
-    "static/media/background.png": "/static/media/background.49bdfe16711b5ddda89d.png",
-    "static/media/mat.png": "/static/media/mat.988ab0b2624f774eda72.png",
-    "static/media/empty-trash.png": "/static/media/empty-trash.91309d39d0af30c8bc4c.png",
-    "static/media/plant.png": "/static/media/plant.760543122db0d08d4803.png",
-    "static/media/arcade-jump.wav": "/static/media/arcade-jump.ae2de8e7e136703f3626.wav",
-    "static/media/books.png": "/static/media/books.c1fd5f46ad1b9e7820a3.png",
-    "static/media/trophy.png": "/static/media/trophy.0f3d39740a91d4fc3327.png",
-    "index.html": "/index.html",
-    "main.aa90ea1c.css.map": "/static/css/main.aa90ea1c.css.map",
-    "main.a989e4ce.js.map": "/static/js/main.a989e4ce.js.map",
-    "787.1f923308.chunk.js.map": "/static/js/787.1f923308.chunk.js.map"
+    "main.css": "/TidyUp/static/css/main.aa90ea1c.css",
+    "main.js": "/TidyUp/static/js/main.b9cdc476.js",
+    "static/js/787.1f923308.chunk.js": "/TidyUp/static/js/787.1f923308.chunk.js",
+    "static/media/unlocked-home-screen.png": "/TidyUp/static/media/unlocked-home-screen.e6214bf34c7a7550768b.png",
+    "static/media/trash.png": "/TidyUp/static/media/trash.001f34435787b57e3dfa.png",
+    "static/media/background.png": "/TidyUp/static/media/background.49bdfe16711b5ddda89d.png",
+    "static/media/mat.png": "/TidyUp/static/media/mat.988ab0b2624f774eda72.png",
+    "static/media/empty-trash.png": "/TidyUp/static/media/empty-trash.91309d39d0af30c8bc4c.png",
+    "static/media/plant.png": "/TidyUp/static/media/plant.760543122db0d08d4803.png",
+    "static/media/arcade-jump.wav": "/TidyUp/static/media/arcade-jump.ae2de8e7e136703f3626.wav",
+    "static/media/books.png": "/TidyUp/static/media/books.c1fd5f46ad1b9e7820a3.png",
+    "static/media/trophy.png": "/TidyUp/static/media/trophy.0f3d39740a91d4fc3327.png",
+    "index.html": "/TidyUp/index.html",
+    "main.aa90ea1c.css.map": "/TidyUp/static/css/main.aa90ea1c.css.map",
+    "main.b9cdc476.js.map": "/TidyUp/static/js/main.b9cdc476.js.map",
+    "787.1f923308.chunk.js.map": "/TidyUp/static/js/787.1f923308.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa90ea1c.css",
-    "static/js/main.a989e4ce.js"
+    "static/js/main.b9cdc476.js"
   ]
 }
