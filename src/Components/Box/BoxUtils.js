@@ -25,7 +25,7 @@ const moveBox = (currentState, setState) => {
         },
     });
 
-    if (nextPos == positions.pos2) {
+    if (nextPos === positions.pos2) {
         correctBoxPosition = true;
     }
 };

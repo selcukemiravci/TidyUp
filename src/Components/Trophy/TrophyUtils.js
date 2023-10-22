@@ -26,7 +26,7 @@ const moveTrophy = (currentState, setState) => {
         },
     });
 
-    if (nextPos == positions.pos3) {
+    if (nextPos === positions.pos3) {
         correctTrophyPosition = true;
     }
 };

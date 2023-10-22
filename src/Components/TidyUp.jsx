@@ -24,6 +24,7 @@ class TidyUp extends React.Component {
     const interval = setInterval(function() {
       if (correctBookPosition && correctBookStackPosition && correctBoxPosition && correctMatPosition && correctPlantPosition && correctTrashFill && correctTrophyPosition) {
         clearInterval(interval);
+        // trigger unlock logic here 
       }
     }, 250);
   };

@@ -25,7 +25,7 @@ const rotateBook = (currentState, setState) => {
         rotation: nextPos,
     });
 
-    if (nextPos == positions.pos2) {
+    if (nextPos === positions.pos2) {
         correctBookPosition = true;
     }
 };

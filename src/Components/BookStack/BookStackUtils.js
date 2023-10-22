@@ -25,7 +25,7 @@ const moveBooks = (currentState, setState) => {
         },
     });
 
-    if (nextPos == positions.pos2) {
+    if (nextPos === positions.pos2) {
         correctBookStackPosition = true;
     }
 };
