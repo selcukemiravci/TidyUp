@@ -1,5 +1,6 @@
 {
   "name": "tidy-up-app",
+  "homepage": "http://selcukemiravci.github.io/TidyUp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
