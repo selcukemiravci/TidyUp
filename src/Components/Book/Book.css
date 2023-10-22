@@ -1,0 +1,6 @@
+.book {
+    width: 95px;
+
+    transition: transform 0.5s;
+    transform-origin: bottom left;
+}
